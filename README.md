@@ -25,6 +25,40 @@ This list of Linux commands should provide you with a more comprehensive underst
 - [Delete a file](#delete-a-file)
 - [Display the contents of a file](#display-the-contents-of-a-file)
 
+## User Management
+
+- [Add a new user](#add-a-new-user)
+- [Delete a user](#delete-a-user)
+- [Change a users password](#change-a-users-password)
+
+## System Information
+
+- [Display system information](#display-system-information)
+- [Check disk usage](#check-disk-usage)
+- [Check memory usage](#check-memory-usage)
+- [Display running processes](#display-running-processes)
+- [Show the history of commands](#show-the-history-of-commands)
+
+## File Compression
+
+- [Compress a file using gzip](#compress-a-file-using-gzip)
+- [Decompress a gzip file](#decompress-a-gzip-file)
+- [Create a tarball archive](#create-a-tarball-archive)
+- [Extract a tarball archive](#extract-a-tarball-archive)
+
+## File and Directory Navigation
+
+- [Change the current directory](#change-the-current-directory)
+- [Go to the users home directory](#go-to-the-users-home-directory)
+- [Go back to the previous directory](#go-back-to-the-previous-directory)
+- [List files and directories with details](#list-files-and-directories-with-details)
+- [List all files including hidden files](#list-all-files-including-hidden-files)
+
+## Searching
+
+- [Search for a file or directory](#search-for-a-file-or-directory)
+- [Search for text within files](#search-for-text-within-files)
+
 ---
 
 
@@ -121,3 +155,128 @@ rm file_name
 ```
 cat file_name
 ```
+
+## User Management
+
+### Add a new user
+
+```
+adduser new_username
+```
+
+### Delete a user
+
+```
+deluser username
+```
+
+### Change a users password
+
+```
+passwd username
+```
+
+## System Information
+
+### Display system information
+
+```
+uname -a
+```
+
+### Check disk usage
+
+```
+df -h
+```
+
+### Check memory usage
+
+```
+free -h
+```
+
+### Display running processes
+
+```
+top
+```
+
+### Show the history of commands
+
+```
+history
+```
+
+## File Compression
+
+### Compress a file using gzip
+
+```
+gzip file_name
+```
+
+### Decompress a gzip file
+
+```
+gunzip file_name.gz
+```
+
+### Create a tarball archive
+
+```
+tar -cvzf archive_name.tar.gz directory_name
+```
+
+### Extract a tarball archive
+
+```
+tar -xvzf archive_name.tar.gz
+```
+
+## File and Directory Navigation
+
+### Change the current directory
+
+```
+cd /path/to/directory
+```
+
+## Go to the users home directory
+
+```
+cd ~
+```
+
+## Go back to the previous directory
+
+```
+cd -
+```
+
+## List files and directories with details
+
+```
+ls -l
+```
+
+## List all files including hidden files
+
+```
+ls -a
+```
+
+## Searching
+
+### Search for a file or directory
+
+```
+find /path/to/start -name "file_name"
+```
+
+### Search for text within files
+
+```
+grep "search_text" /path/to/files/*
+```
+
