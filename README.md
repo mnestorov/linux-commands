@@ -349,3 +349,9 @@ wc file_name
 ```
 sed 's/old_text/new_text/g' input_file > output_file
 ```
+
+---
+
+## License
+
+This project is released under the MIT License.
