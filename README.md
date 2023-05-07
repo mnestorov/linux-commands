@@ -10,6 +10,10 @@ This list of Linux commands should provide you with a more comprehensive underst
 - [Reserve loockup host](#reserve-loockup-host)
 - [Outputs the webpage from url](#outputs-the-webpage-from-url)
 - [Connect at host as user](#connect-to-a-host-as-a-user-ssh)
+- [Display network interfaces and their configuration](#display-network-interfaces-and-their-configuration)
+- [Display active network connections](#display-active-network-connections)
+- [Download a file from the internet](#download-a-file-from-the-internet)
+- [Transfer files via FTP](#transfer-files-via-ftp)
 
 ## Permissions
 
@@ -59,6 +63,14 @@ This list of Linux commands should provide you with a more comprehensive underst
 - [Search for a file or directory](#search-for-a-file-or-directory)
 - [Search for text within files](#search-for-text-within-files)
 
+## Text Manipulation
+
+- [Display the first few lines of a file](#display-the-first-few-lines-of-a-file)
+- [Display the last few lines of a file](#display-the-last-few-lines-of-a-file)
+- [Sort lines of a text file](#sort-lines-of-a-text-file)
+- [Count words, lines, and characters in a file](#count-words-lines-and-characters-in-a-file)
+- [Replace text in a file](#replace-text-in-a-file)
+
 ---
 
 
@@ -99,6 +111,32 @@ curl example.com
 ```
 ssh user@example.com
 ```
+
+### Display network interfaces and their configuration
+
+```
+ifconfig
+```
+
+### Display active network connections
+
+```
+netstat
+```
+
+### Download a file from the internet
+
+```
+wget http://example.com/file_name
+```
+
+### Transfer files via FTP
+
+```
+ftp ftp.example.com
+```
+
+
 
 ## Permissions
 
@@ -280,3 +318,34 @@ find /path/to/start -name "file_name"
 grep "search_text" /path/to/files/*
 ```
 
+## Text Manipulation
+
+### Display the first few lines of a file
+
+```
+head file_name
+```
+
+### Display the last few lines of a file
+
+```
+tail file_name
+```
+
+### Sort lines of a text file
+
+```
+sort file_name
+```
+
+### Count words, lines, and characters in a file
+
+```
+wc file_name
+```
+
+### Replace text in a file
+
+```
+sed 's/old_text/new_text/g' input_file > output_file
+```
