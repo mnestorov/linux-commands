@@ -1,4 +1,6 @@
-# Linux useful commands
+# Linux commands
+
+This list of Linux commands should provide you with a more comprehensive understanding of the tools available for various tasks in the Linux environment.
 
 ## Networking
 
