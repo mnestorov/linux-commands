@@ -80,8 +80,8 @@ This list of Linux commands should provide you with a more comprehensive underst
 - [Display the systems uptime](#display-the-systems-uptimev)
 - [Change the owner of a file or directory](#change-the-owner-of-a-file-or-directory)
 - [Change the group ownership of a file or directory](#change-the-group-ownership-of-a-file-or-directory)
-- [Schedule a command to run at a specific time (using at)](#schedule-a-command-to-run-at-a-specific-time-using at)
-- [Schedule a recurring command (using cron)](#schedule-a-recurring-command-using-cron)
+- [Schedule a command to run at a specific time using at](#schedule-a-command-to-run-at-a-specific-time-using at)
+- [Schedule a recurring command using cron](#schedule-a-recurring-command-using-cron)
 - [View system logs](#view-system-logs)
 - [Display the list of installed packages](#display-the-list-of-installed-packages)
 - [Install a package using apt-get](#install-a-package-using-apt-get)
@@ -412,13 +412,13 @@ chown new_owner /path/to/file_or_directory
 chgrp new_group /path/to/file_or_directory
 ```
 
-### Schedule a command to run at a specific time (using at)
+### Schedule a command to run at a specific time using at
 
 ```
 echo "command" | at 3:00pm
 ```
 
-### Schedule a recurring command (using cron)
+### Schedule a recurring command using cron
 
 ```
 crontab -e
