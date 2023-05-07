@@ -71,6 +71,24 @@ This list of Linux commands should provide you with a more comprehensive underst
 - [Count words, lines, and characters in a file](#count-words-lines-and-characters-in-a-file)
 - [Replace text in a file](#replace-text-in-a-file)
 
+## System Administration
+
+- [Shutdown the system](#shutdown-the-system)
+- [Reboot the system](#reboot-the-system)
+- [Display disk usage by directory](#display-disk-usage-by-directory)
+- [Display the current date and time](#display-the-current-date-and-time)
+- [Display the systems uptime](#display-the-systems-uptimev)
+- [Change the owner of a file or directory](#change-the-owner-of-a-file-or-directory)
+- [Change the group ownership of a file or directory](#change-the-group-ownership-of-a-file-or-directory)
+- [Schedule a command to run at a specific time (using at)](#schedule-a-command-to-run-at-a-specific-time-using at)
+- [Schedule a recurring command (using cron)](#schedule-a-recurring-command-using-cron)
+- [View system logs](#view-system-logs)
+- [Display the list of installed packages](#display-the-list-of-installed-packages)
+- [Install a package using apt-get](#install-a-package-using-apt-get)
+- [Update the package list](#update-the-package-list)
+- [Upgrade installed packages](#upgrade-installed-packages)
+- [Remove a package](#remove-a-package)
+
 ---
 
 
@@ -348,6 +366,98 @@ wc file_name
 
 ```
 sed 's/old_text/new_text/g' input_file > output_file
+```
+
+## System Administration
+
+### Shutdown the system
+
+```
+shutdown -h now
+```
+
+### Reboot the system
+
+```
+reboot
+```
+
+### Display disk usage by directory
+
+```
+du -sh /path/to/directory
+```
+
+### Display the current date and time
+
+```
+date
+```
+
+### Display the systems uptime
+
+```
+uptime
+```
+
+### Change the owner of a file or directory
+
+```
+chown new_owner /path/to/file_or_directory
+```
+
+### Change the group ownership of a file or directory
+
+```
+chgrp new_group /path/to/file_or_directory
+```
+
+### Schedule a command to run at a specific time (using at)
+
+```
+echo "command" | at 3:00pm
+```
+
+### Schedule a recurring command (using cron)
+
+```
+crontab -e
+```
+
+### View system logs
+
+```
+less /var/log/syslog
+```
+
+### Display the list of installed packages
+
+```
+dpkg --list
+```
+
+### Install a package using apt-get
+
+```
+sudo apt-get install package_name
+```
+
+### Update the package list
+
+```
+sudo apt-get update
+```
+
+### Upgrade installed packages
+
+```
+sudo apt-get upgrade
+```
+
+### Remove a package
+
+```
+sudo apt-get remove package_name
 ```
 
 ---
