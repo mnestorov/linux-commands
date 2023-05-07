@@ -80,7 +80,7 @@ This list of Linux commands should provide you with a more comprehensive underst
 - [Display the systems uptime](#display-the-systems-uptimev)
 - [Change the owner of a file or directory](#change-the-owner-of-a-file-or-directory)
 - [Change the group ownership of a file or directory](#change-the-group-ownership-of-a-file-or-directory)
-- [Schedule a command to run at a specific time using at](#schedule-a-command-to-run-at-a-specific-time-using at)
+- [Schedule a command to run at a specific time using at](#schedule-a-command-to-run-at-a-specific-time-using-at)
 - [Schedule a recurring command using cron](#schedule-a-recurring-command-using-cron)
 - [View system logs](#view-system-logs)
 - [Display the list of installed packages](#display-the-list-of-installed-packages)
