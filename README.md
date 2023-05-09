@@ -9,7 +9,7 @@ This list of Linux commands should provide you with a more comprehensive underst
 - [Get DNS for domain](#get-dns-for-domain)
 - [Reserve loockup host](#reserve-loockup-host)
 - [Outputs the webpage from url](#outputs-the-webpage-from-url)
-- [Connect at host as user](#connect-to-a-host-as-a-user-ssh)
+- [Connect at host  as user](#connect-to-a-host-as-a-user-ssh)
 - [Display network interfaces and their configuration](#display-network-interfaces-and-their-configuration)
 - [Display active network connections](#display-active-network-connections)
 - [Download a file from the internet](#download-a-file-from-the-internet)
@@ -77,7 +77,7 @@ This list of Linux commands should provide you with a more comprehensive underst
 - [Reboot the system](#reboot-the-system)
 - [Display disk usage by directory](#display-disk-usage-by-directory)
 - [Display the current date and time](#display-the-current-date-and-time)
-- [Display the systems uptime](#display-the-systems-uptimev)
+- [Display the systems uptime](#display-the-systems-uptime)
 - [Change the owner of a file or directory](#change-the-owner-of-a-file-or-directory)
 - [Change the group ownership of a file or directory](#change-the-group-ownership-of-a-file-or-directory)
 - [Schedule a command to run at a specific time using at](#schedule-a-command-to-run-at-a-specific-time-using-at)
@@ -88,6 +88,11 @@ This list of Linux commands should provide you with a more comprehensive underst
 - [Update the package list](#update-the-package-list)
 - [Upgrade installed packages](#upgrade-installed-packages)
 - [Remove a package](#remove-a-package)
+
+## SSH Key
+
+- [Generate a new SSH key](#generate-a-new-ssh-key)
+- [View your public SSH key](#view-your-public-ssh-key)
 
 ---
 
@@ -458,6 +463,22 @@ sudo apt-get upgrade
 
 ```
 sudo apt-get remove package_name
+```
+
+## SSH Key
+
+### Generate a new SSH key
+
+**Generate a new SSH key pair (using RSA with 4096 bits)**
+
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+### View your public SSH key
+
+```
+cat ~/.ssh/id_rsa.pub
 ```
 
 ---
