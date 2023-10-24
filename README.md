@@ -94,6 +94,10 @@ This list of Linux commands should provide you with a more comprehensive underst
 - [Generate a new SSH key](#generate-a-new-ssh-key)
 - [View your public SSH key](#view-your-public-ssh-key)
 
+## PHP Versions
+
+- [Switch Between Multiple PHP Versions](#switch-between-multiple-php-versions)
+
 ---
 
 
@@ -479,6 +483,12 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 ```
 cat ~/.ssh/id_rsa.pub
+```
+
+### Switch Between Multiple PHP Versions
+
+```
+sudo update-alternatives --config php
 ```
 
 ---
